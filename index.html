@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <title>VinitVisions | VINIT VORA</title>
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="loader">
+            <div class="slider" style="--i:0">
+            </div>
+            <div class="slider" style="--i:1">
+            </div>
+            <div class="slider" style="--i:2">
+            </div>
+            <div class="slider" style="--i:3">
+            </div>
+            <div class="slider" style="--i:4">
+            </div>
+        </div>
+
+        <div class="form-box">
+            <div class="form-value">
+                <form action="">
+                    <h2>Temperature Converter</h2>
+                    <div class="inputbox">
+                        <ion-icon name="thermometer-outline"></ion-icon>
+                        <input type="number" required id="inputTemperature">
+                        <label for="inputTemperature">Enter Temperature</label>
+                    </div>
+
+                    <div class="inputbox">
+                        <select id="conversionType">
+                            <option value="celsiusToFahrenheit">Celsius to Fahrenheit</option>
+                            <option value="fahrenheitToCelsius">Fahrenheit to Celsius</option>
+                            <option value="celsiusToKelvin">Celsius to Kelvin</option>
+                            <option value="kelvinToCelsius">Kelvin to Celsius</option>
+                        </select>
+                    </div>
+
+                    <button onclick="convertTemperature()" class="button"> Convert </button>
+
+                    <div class="result" id="result">
+                        <!-- Conversion result will be displayed here -->
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- <div class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2023 by Vinit Vora | All Rights Reserved &REG;</p>
+            </div>
+        </div> -->
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
